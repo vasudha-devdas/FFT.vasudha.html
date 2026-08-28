@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Registration Form</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        form {
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 600px;
+            max-width: 100%;
+            margin: auto;
+            padding: 30px;
+            box-shadow: 5px 10px 15px gray;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            height: 35px;
+            padding: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        .gender {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .gender input {
+            width: auto;
+            height: auto;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 25px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #submit {
+            background-color: rgb(55, 206, 118);
+        }
+
+        #reset {
+            background-color: lightgray;
+        }
+
+        #submit:hover {
+            background-color: green;
+            color: white;
+        }
+
+        #reset:hover {
+            background-color: gray;
+            color: white;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <form>
+
+        <h1>Student Registration Form</h1>
+
+        <div class="form-group">
+            <label for="regno">Registration Number:</label>
+            <input type="number" id="regno" placeholder="Enter your registration number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" required>
+        </div>
+
+        <div class="form-group">
+
+            <label>Gender:</label>
+
+            <div class="gender">
+
+                <label>
+                    <input type="radio" name="gender" value="male">
+                    Male
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="female">
+                    Female
+                </label>
+
+                <label>
+                    <input type="radio" name="gender" value="others">
+                    Others
+                </label>
+
+            </div>
+
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email ID:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department:</label>
+            <input type="text" id="department" placeholder="Enter department">
+        </div>
+
+        <div class="form-group">
+
+            <label for="course">Course:</label>
+
+            <select id="course" name="course">
+
+                <option value="">Choose Course</option>
+                <option value="MCA">MCA</option>
+                <option value="MBA">MBA</option>
+                <option value="MCom">M.Com</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+
+            <label for="section">Section:</label>
+
+            <select id="section" name="section">
+
+                <option value="">Choose Section</option>
+                <option value="A">Section A</option>
+                <option value="B">Section B</option>
+                <option value="C">Section C</option>
+
+            </select>
+
+        </div>
+
+        <div class="form-group">
+            <label for="college">College Name:</label>
+            <input type="text" id="college" placeholder="Enter college name">
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address:</label>
+            <input type="text" id="address" placeholder="Enter your address">
+        </div>
+
+        <div class="form-group">
+            <label for="resume">Resume:</label>
+            <input type="file" id="resume">
+        </div>
+
+        <div class="buttons">
+
+            <button type="submit" id="submit">
+                Submit
+            </button>
+
+            <button type="reset" id="reset">
+                Reset
+            </button>
+
+        </div>
+
+    </form>
+
+</body>
+
+</html>
