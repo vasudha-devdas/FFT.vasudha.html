@@ -1,0 +1,127 @@
+
+<html>
+<head>
+    <title>Birthday Card</title>
+
+    <style>
+
+        body {
+            background-color: lightpink;
+            font-family: Arial;
+            text-align: center;
+            padding-top: 100px;
+        }
+         
+        /* Birthday Card */
+        .card {
+            width: 400px;
+            margin: auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px gray;
+
+            /* Transition */
+            transition: 0.5s;
+        }
+
+        /* Card Transition */
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px gray;
+        }
+
+        /* Cake Animation */
+        .cake {
+            font-size: 60px;
+            animation: bounce 1.5s infinite;
+        }
+
+        /* Heading Animation */
+        h1 {
+            color: deeppink;
+            animation: move 2s infinite alternate;
+        }
+
+        p {
+            font-size: 18px;
+            color: gray;
+        }
+
+        /* Button */
+        button {
+            background-color: deeppink;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+
+            /* Transition */
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: purple;
+            transform: scale(1.1);
+        }
+
+        /* Heading Animation */
+        @keyframes move {
+
+            from {
+                transform: translateY(0);
+            }
+
+            to {
+                transform: translateY(-10px);
+            }
+
+        }
+
+        /* Cake Animation */
+        @keyframes bounce {
+
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-15px);
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+
+        <div class="cake">🎂</div>
+
+        <h1>Happy Birthday!</h1>
+
+        <p>
+            Wishing you lots of happiness,
+            love and success.
+        </p>
+
+        <p>
+            Have a wonderful birthday! 🎉
+        </p>
+
+        <button onclick="alert('Happy Birthday! 🎉')">
+            Click Me
+        </button>
+
+    </div>
+
+</body>
+</html>
+```

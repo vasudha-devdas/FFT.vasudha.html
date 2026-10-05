@@ -1,0 +1,219 @@
+<html>
+<head>
+    <title>Campus Innovation Fest</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #eef2f7;
+            margin: 0;
+        }
+        h1 {
+            color: #7c2d12;
+            text-align: center;
+        }
+        h2 {
+            color: #7c2d12;
+        }
+        nav {
+            background-color: #7c2d12;
+            padding: 18px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 18px;
+        }
+        nav a:hover {
+            color: #fed7aa;
+        }
+        .banner {
+            background-color: #fff7ed;
+            text-align: center;
+            padding: 55px 20px;
+        }
+        .banner p {
+            font-size: 18px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #ea580c;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .box {
+            background-color: white;
+            padding: 25px;
+            margin: 20px;
+            border-radius: 8px;
+        }
+        table {
+            width: 100%;
+            background-color: white;
+            border-collapse: collapse;
+        }
+        th {
+            background-color: #ea580c;
+            color: white;
+        }
+        th,
+        td {
+            padding: 12px;
+            text-align: center;
+            border: 1px solid #bbb;
+        }
+        .speaker {
+            background-color: #fff7ed;
+            padding: 18px;
+            margin: 12px 0;
+            border-left: 5px solid #ea580c;
+        }
+        form {
+            background-color: #fff7ed;
+            padding: 25px;
+            border-radius: 8px;
+        }
+        input,
+        textarea {
+            margin: 8px;
+            padding: 10px;
+            width: 80%;
+        }
+        input[type="submit"] {
+            background-color: #ea580c;
+            color: white;
+            border: none;
+            width: auto;
+            padding: 10px 25px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #7c2d12;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+            .box {
+                margin: 10px;
+            }
+            table {
+                font-size: 14px;
+            }
+            input,
+            textarea {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#details">Event</a>
+        <a href="#schedule">Schedule</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="banner" id="home">
+        <h1>Campus Innovation Fest 2026</h1>
+        <p>Explore • Learn • Create</p>
+        <p><b>Date:</b> 20 October 2026</p>
+        <p>
+            Join us for an exciting day of technology,
+            creativity and innovation.
+        </p>
+        <a href="#register" class="button">Register Now</a>
+    </div>
+    <div class="box" id="details">
+        <h2>Event Details</h2>
+        <p><b>Date:</b> 20 October 2026</p>
+        <p><b>Time:</b> 10:00 AM to 5:00 PM</p>
+        <p><b>Venue:</b> Main College Auditorium</p>
+        <p>
+            Students can participate in workshops,
+            technical activities and project presentations.
+        </p>
+    </div>
+    <div class="box" id="schedule">
+        <h2>Event Schedule</h2>
+        <table>
+            <tr>
+                <th>Time</th>
+                <th>Activity</th>
+            </tr>
+            <tr>
+                <td>10:00 AM</td>
+                <td>Opening Ceremony</td>
+            </tr>
+            <tr>
+                <td>11:00 AM</td>
+                <td>Technology Talk</td>
+            </tr>
+            <tr>
+                <td>12:30 PM</td>
+                <td>UI/UX Workshop</td>
+            </tr>
+            <tr>
+                <td>1:30 PM</td>
+                <td>Lunch Break</td>
+            </tr>
+            <tr>
+                <td>2:30 PM</td>
+                <td>Innovation Challenge</td>
+            </tr>
+            <tr>
+                <td>4:30 PM</td>
+                <td>Closing & Awards</td>
+            </tr>
+        </table>
+    </div>
+    <div class="box">
+        <h2>Guest Speakers</h2>
+        <div class="speaker">
+            <h3>Dr. Neha Verma</h3>
+            <p>Data Science Professional</p>
+        </div>
+        <div class="speaker">
+            <h3>Mr. Rohan Mehta</h3>
+            <p>Software Development Expert</p>
+        </div>
+    </div>
+    <div class="box" id="register">
+        <h2>Student Registration</h2>
+        <form>
+            <label>Name:</label><br>
+            <input type="text" placeholder="Enter your name">
+            <br>
+            <label>Email:</label><br>
+            <input type="email" placeholder="Enter your email">
+            <br>
+            <label>College:</label><br>
+            <input type="text" placeholder="Enter college name">
+            <br>
+            <label>Message:</label><br>
+            <textarea placeholder="Write your message"></textarea>
+            <br>
+            <input type="submit" value="Submit Registration">
+        </form>
+    </div>
+    <div class="box" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: innovationfest@gmail.com</p>
+        <p>Phone: 98765 43210</p>
+        <p>Venue: Main College Campus</p>
+    </div>
+    <footer>
+        <p>© 2026 Campus Innovation Fest | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
+

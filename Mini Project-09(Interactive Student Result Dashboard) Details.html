@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background: #e8eaf6;
+        }
+
+        .box {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        h2 {
+            color: #4a148c;
+            text-align: center;
+        }
+
+        input, button {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            box-sizing: border-box;
+            border-radius: 6px;
+        }
+
+        input {
+            border: 1px solid #b39ddb;
+        }
+
+        input:focus {
+            outline: none;
+            border: 2px solid #7b1fa2;
+        }
+
+        button {
+            background: #7b1fa2;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #4a148c;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f3e5f5;
+            border-left: 5px solid #7b1fa2;
+            border-radius: 6px;
+        }
+
+        #result h3 {
+            color: #4a148c;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+
+    <h2>Student Result</h2>
+
+    <input id="name" type="text" placeholder="Student Name">
+    <input id="roll" type="text" placeholder="Roll Number">
+
+    <input id="html" type="number" placeholder="HTML Marks">
+    <input id="ds" type="number" placeholder="DS Marks">
+    <input id="ads" type="number" placeholder="ADS Marks">
+
+    <button onclick="showResult()">Show Result</button>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+
+function showResult() {
+
+    let name = document.getElementById("name").value;
+    let roll = document.getElementById("roll").value;
+
+    let html = Number(document.getElementById("html").value);
+    let ds = Number(document.getElementById("ds").value);
+    let ads = Number(document.getElementById("ads").value);
+
+    let total = html + ds + ads;
+    let percentage = total / 3;
+
+    let result;
+
+    if (html >= 40 && ds >= 40 && ads >= 40) {
+        result = "Pass";
+    } else {
+        result = "Fail";
+    }
+
+    document.getElementById("result").innerHTML =
+        "<h3>Result</h3>" +
+        "Name: " + name + "<br>" +
+        "Roll Number: " + roll + "<br>" +
+        "Total: " + total + "/300<br>" +
+        "Percentage: " + percentage.toFixed(2) + "%<br>" +
+        "Result: " + result;
+}
+
+</script>
+
+</body>
+</html>

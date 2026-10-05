@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chess Board Game</title>
+
+    <style>
+        .parent {
+            background-color: antiquewhite;
+            display: grid;
+            grid-template-columns: repeat(8, 100px);
+            width: fit-content;
+        }
+
+        .parent div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            box-shadow: 2px 2px 6px gray;
+
+            /* Chess piece alignment */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            /* Piece size */
+            font-size: 50px;
+            line-height: 1;
+        }
+
+        .black {
+            background-color: black;
+            color: white;
+        }
+
+        .white {
+            background-color: aliceblue;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Chess Board Game</h1>
+
+    <div class="parent">
+
+        <!-- Black Pieces -->
+        <div class="black">♜</div>
+        <div class="white">♞</div>
+        <div class="black">♝</div>
+        <div class="white">♛</div>
+        <div class="black">♚</div>
+        <div class="white">♝</div>
+        <div class="black">♞</div>
+        <div class="white">♜</div>
+
+        <!-- Black Pawns -->
+        <div class="white">♟</div>
+        <div class="black">♟</div>
+        <div class="white">♟</div>
+        <div class="black">♟</div>
+        <div class="white">♟</div>
+        <div class="black">♟</div>
+        <div class="white">♟</div>
+        <div class="black">♟</div>
+
+        <!-- Empty Row -->
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+
+        <!-- Empty Row -->
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+
+        <!-- Empty Row -->
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+
+        <!-- Empty Row -->
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+        <div class="white"></div>
+        <div class="black"></div>
+
+        <!-- White Pawns -->
+        <div class="black">♙</div>
+        <div class="white">♙</div>
+        <div class="black">♙</div>
+        <div class="white">♙</div>
+        <div class="black">♙</div>
+        <div class="white">♙</div>
+        <div class="black">♙</div>
+        <div class="white">♙</div>
+
+        <!-- White Pieces -->
+        <div class="white">♖</div>
+        <div class="black">♘</div>
+        <div class="white">♗</div>
+        <div class="black">♕</div>
+        <div class="white">♔</div>
+        <div class="black">♗</div>
+        <div class="white">♘</div>
+        <div class="black">♖</div>
+
+    </div>
+
+</body>
+</html>
